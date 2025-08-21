@@ -16,6 +16,7 @@ public class WebclientApplication {
 
 		String url = "https://api.sleeper.app/v1/players/nfl";
 
+
 		ApplicationContext context = SpringApplication.run(WebclientApplication.class, args);
 
 		WebClient webClient = context.getBean(WebClient.class);
