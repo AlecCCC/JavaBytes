@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="webclient" />
         <module name="WriteApiToFile" />
+        <module name="PostExample" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="PostExample" options="-parameters" />
       <module name="WriteApiToFile" options="-parameters" />
       <module name="webclient" options="-parameters" />
     </option>
