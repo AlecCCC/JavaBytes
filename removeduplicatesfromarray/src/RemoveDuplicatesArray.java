@@ -28,7 +28,6 @@ public class RemoveDuplicatesArray {
 
         HashSet<Integer> seen = new HashSet<>();
 
-        // ✅ Loop over array, not seen
         for (int num : array) {
             seen.add(num);
         }
