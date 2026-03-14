@@ -5,25 +5,6 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-//        int a = 0;
-//        int b = 1;
-//        int c;
-//
-//        int index = 0;
-//
-//        System.out.print(a + " " + b );
-//
-//        while (index < 7) {
-//
-//            c = a + b;
-//
-//            System.out.print(" " + c);
-//
-//            a = b;
-//            b = c;
-//            index++;
-//
-//        }
 
         System.out.println(Arrays.toString(fibSeq(15, 9, 11)));
 
