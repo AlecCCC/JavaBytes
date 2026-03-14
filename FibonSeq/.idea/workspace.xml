@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a25e5c18-cd89-46f9-804f-e4218689a431" name="Changes" comment="Changed filename" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "AlecCCC"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/AlecCCC/JavaBytes",
+    "accountId": "3fcf0aaa-ef8e-440a-a9ee-9399a7fbc30c"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="3AxKK2H0F6AWxuICfXnZX4IhHZx" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "onboarding.tips.debug.path": "C:/Users/alecx/Documents/Java Bytes/FibonSeq/src/Main.java",
+    "settings.editor.selected.configurable": "Educational"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a25e5c18-cd89-46f9-804f-e4218689a431" name="Changes" comment="" />
+      <created>1773528717592</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1773528717592</updated>
+    </task>
+    <task id="LOCAL-00001" summary="fibonacci sequence">
+      <option name="closed" value="true" />
+      <created>1773530254569</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1773530254569</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fibonacci sequence has function">
+      <option name="closed" value="true" />
+      <created>1773531313631</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1773531313631</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fibonacci sequence has function">
+      <option name="closed" value="true" />
+      <created>1773531614346</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1773531614346</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Changed filename">
+      <option name="closed" value="true" />
+      <created>1773532180357</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1773532180357</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fibonacci sequence" />
+    <MESSAGE value="fibonacci sequence has function" />
+    <MESSAGE value="Changed filename" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed filename" />
+  </component>
+</project>
