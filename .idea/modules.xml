@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/04-java2sum/04-java2sum.iml" filepath="$PROJECT_DIR$/04-java2sum/04-java2sum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05-removeduplicatesfromarray/05-removeduplicatesfromarray.iml" filepath="$PROJECT_DIR$/05-removeduplicatesfromarray/05-removeduplicatesfromarray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06-FibonSeq/06-FibonSeq.iml" filepath="$PROJECT_DIR$/06-FibonSeq/06-FibonSeq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07-Palindrome/07-Palindrome.iml" filepath="$PROJECT_DIR$/07-Palindrome/07-Palindrome.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Java Bytes.iml" filepath="$PROJECT_DIR$/.idea/Java Bytes.iml" />
     </modules>
   </component>

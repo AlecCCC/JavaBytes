@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-    javaTwoSumProblem javaTwoSumProblem = new javaTwoSumProblem();
+        javaTwoSumProblem javaTwoSumProblem = new javaTwoSumProblem();
 
         int numArray[] = {1 ,7, 5, 10};
 
