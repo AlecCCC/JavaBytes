@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/07-Palindrome/07-Palindrome.iml" filepath="$PROJECT_DIR$/07-Palindrome/07-Palindrome.iml" />
       <module fileurl="file://$PROJECT_DIR$/08-RomanNumeral/08-RomanNumeral.iml" filepath="$PROJECT_DIR$/08-RomanNumeral/08-RomanNumeral.iml" />
       <module fileurl="file://$PROJECT_DIR$/09-numberPalindrome/09-numberPalindrome.iml" filepath="$PROJECT_DIR$/09-numberPalindrome/09-numberPalindrome.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10-LinkedList/10-LinkedList.iml" filepath="$PROJECT_DIR$/10-LinkedList/10-LinkedList.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Java Bytes.iml" filepath="$PROJECT_DIR$/.idea/Java Bytes.iml" />
     </modules>
   </component>
