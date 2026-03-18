@@ -4,12 +4,10 @@ public class Main {
         LinkedList linkedList = new LinkedList(10);
         linkedList.append(13); // add Node
 
-        linkedList.removeLast(); // remove last
 
 
         linkedList.prepend(20);  //prepend
 
-        linkedList.removeFirst(); // remove first
 
 
         linkedList.append(6); // add Node
@@ -20,12 +18,13 @@ public class Main {
 
 
         Node node = linkedList.getNode(2);
+
+        linkedList.delete(0); // delete node at index i
         System.out.println("\n");
-        System.out.println(node.value);
-
-
-
-
+        linkedList.printList();
+        linkedList.reverse();
+        System.out.println("\n");
+        linkedList.printList();
 
 
     }

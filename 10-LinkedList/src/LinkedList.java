@@ -12,7 +12,6 @@ public class LinkedList {
         this.length = 1;
     }
 
-
     public void printList() {
         Node temp = head;
 
@@ -119,6 +118,92 @@ public class LinkedList {
 
         }
         return temp;
+    }
+
+    public boolean set(int index, int value) {
+
+        Node temp = getNode(index);
+
+        if (temp != null) {
+            temp.value = value;
+            return true;
+        }
+
+        return false;
+    }
+
+    public boolean insert(int index, int value) {
+
+        if (index < 0 || index > length) {
+            return false;
+        }
+        if ( index == 0 ) {
+            prepend(value);
+            return true;
+        }
+        if (index == length) {
+            append(value);
+            return true;
+        }
+        Node newNode = new Node(value);
+        Node temp = getNode(index - 1); // our temp points to the node before the index
+
+        newNode.next = temp.next; //have the newNode pointer same as temp.next
+        temp.next = newNode;
+
+        length++;
+        return true;
+
+
+
+
+    }
+
+    public Node delete(int index) {
+
+        if (index < 0 || index >= length) {
+            return null;
+        }
+
+        if (index == 0) {
+           return removeFirst();
+        }
+
+        if (index == length -1) return removeLast();
+
+        Node prev = getNode(index - 1); // get node before index
+        Node temp = prev.next; // set our temp node to node after index
+        prev.next = temp.next; // points to node After temps node.
+
+        temp.next = null; // disconnect deleted node
+
+        length--;
+
+        return temp;
+
+
+
+
+    }
+
+    public void reverse() {
+        Node temp = head;
+        head = tail;
+        tail = temp; //temp was head, so tail =  tamp to complete swap;
+        Node after;
+        Node before = null;
+
+
+        for (int i = 0; i < length; i++) {
+
+            after = temp.next;  // set node to node that temp is pointing to
+            temp.next = before; // we are now pointing to the node that is behind temp;
+
+            before = temp;
+            temp = after;
+        }
+
+
     }
 
 
