@@ -59,19 +59,11 @@ public class LinkedList {
             length --;
 
             if (length == 0) {
-
                 head = null;
                 tail = null;
-
             }
-
             return temp;
-
         }
-
-
-
-
     }
 
     public void prepend (int value) {
@@ -155,8 +147,6 @@ public class LinkedList {
         return true;
 
 
-
-
     }
 
     public Node delete(int index) {
@@ -206,11 +196,62 @@ public class LinkedList {
 
     }
 
+    public Node findMiddleNode()  {
+
+        Node slow = head;
+        Node fast = head;
+
+        while (fast != null && fast.next != null) {
+
+            fast = fast.next.next;
+            slow = slow.next;
+
+        }
+
+        return slow;
+
+    }
+
+    public boolean hasLoop() {
+
+        Node slow = head;
+        Node fast = head;
+
+        while (fast != null && fast.next != null) {
+
+            slow = slow.next;
+            fast = fast.next.next;
+
+            if (slow == fast) {
+                return true;
+            }
+        }
+        return false;
+
+    }
+
+    public Node kthFromEnd(int k ) {
+
+        if (k <= 0 ) return null;
+
+        Node fast = head;
+        Node slow = head;
 
 
 
+        for (int i = 0; i < k; i ++) {
+            fast = fast.next;
+            if (fast == null) return null;
+        }
 
+        while(fast != null) {
+            slow = slow.next;
+            fast = fast.next;
+        }
 
+        return slow;
+
+    }
 
 
 
