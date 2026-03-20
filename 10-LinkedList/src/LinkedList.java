@@ -253,7 +253,12 @@ public class LinkedList {
 
     }
 
+    public void removeDuplicate() {
 
+        Node current = head;
+
+
+    }
 
     public void getHead() {
         System.out.println("Head " + head.value);
