@@ -282,4 +282,20 @@ public class LinkedList {
     public void getLength() {
         System.out.println("length " + length);
     }
+
+    public int getDecimal(){
+
+        int sum = 0;
+
+        Node current = head;
+
+        while(current != null) {
+
+            sum = sum * 2 + current.value;
+            current = current.next;
+
+        }
+        return sum;
+    }
+
 }
