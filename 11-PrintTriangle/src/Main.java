@@ -8,22 +8,11 @@ public class Main {
 
         int rows = scanner.nextInt();
 
-
-
         rightTriangle(5);
-
         System.out.println();
-
         leftTriangle(5);
-
         System.out.println();
-
         upsideDownTriangle(rows);
-
-
-
-
-
 
     }
 
@@ -82,5 +71,6 @@ public class Main {
 
 
     }
+
 
 }

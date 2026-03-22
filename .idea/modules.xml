@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/09-numberPalindrome/09-numberPalindrome.iml" filepath="$PROJECT_DIR$/09-numberPalindrome/09-numberPalindrome.iml" />
       <module fileurl="file://$PROJECT_DIR$/10-LinkedList/10-LinkedList.iml" filepath="$PROJECT_DIR$/10-LinkedList/10-LinkedList.iml" />
       <module fileurl="file://$PROJECT_DIR$/11-PrintTriangle/11-PrintTriangle.iml" filepath="$PROJECT_DIR$/11-PrintTriangle/11-PrintTriangle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/12-NumberLoop/12-NumberLoop.iml" filepath="$PROJECT_DIR$/12-NumberLoop/12-NumberLoop.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Java Bytes.iml" filepath="$PROJECT_DIR$/.idea/Java Bytes.iml" />
     </modules>
   </component>
