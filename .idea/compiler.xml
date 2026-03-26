@@ -6,15 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="webclient" />
-        <module name="WriteApiToFile" />
-        <module name="PostExample" />
+        <module name="SpringSecurityChapter2" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="16-SpringSecurity-01" target="22" />
+      <module name="PostExample" target="17" />
+      <module name="webclient" target="17" />
+      <module name="WriteApiToFile" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="PostExample" options="-parameters" />
+      <module name="SpringSecurityChapter2" options="-parameters" />
       <module name="WriteApiToFile" options="-parameters" />
       <module name="webclient" options="-parameters" />
     </option>
