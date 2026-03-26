@@ -12,7 +12,8 @@
       <module fileurl="file://$PROJECT_DIR$/11-PrintTriangle/11-PrintTriangle.iml" filepath="$PROJECT_DIR$/11-PrintTriangle/11-PrintTriangle.iml" />
       <module fileurl="file://$PROJECT_DIR$/12-NumberLoop/12-NumberLoop.iml" filepath="$PROJECT_DIR$/12-NumberLoop/12-NumberLoop.iml" />
       <module fileurl="file://$PROJECT_DIR$/13-PrintDiamond/13-PrintDiamond.iml" filepath="$PROJECT_DIR$/13-PrintDiamond/13-PrintDiamond.iml" />
-      <module fileurl="file://$PROJECT_DIR$/HollowDIamond/HollowDIamond.iml" filepath="$PROJECT_DIR$/HollowDIamond/HollowDIamond.iml" />
+      <module fileurl="file://$PROJECT_DIR$/15-SumOfArrays/15-SumOfArrays.iml" filepath="$PROJECT_DIR$/15-SumOfArrays/15-SumOfArrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/14-HollowDIamond/HollowDIamond.iml" filepath="$PROJECT_DIR$/14-HollowDIamond/HollowDIamond.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Java Bytes.iml" filepath="$PROJECT_DIR$/.idea/Java Bytes.iml" />
     </modules>
   </component>
