@@ -74,4 +74,15 @@ public class Book {
     public void setQty(int qty) {
         this.qty = qty;
     }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id=" + id +
+                ", author='" + author + '\'' +
+                ", title='" + title + '\'' +
+                ", price=" + price +
+                ", qty=" + qty +
+                '}';
+    }
 }

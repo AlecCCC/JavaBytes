@@ -7,4 +7,6 @@ public interface BookStoreDao {
 
     void createBook(Book book);
 
+    Book getBookById(Integer id);
+
 }

@@ -19,4 +19,9 @@ public class BookStoreDaoImpl implements BookStoreDao{
     public void createBook(Book book) {
         entityManager.persist(book);
     }
+
+    @Override
+    public Book getBookById(Integer id) {
+        return entityManager.find(Book.class, id);
+    }
 }
