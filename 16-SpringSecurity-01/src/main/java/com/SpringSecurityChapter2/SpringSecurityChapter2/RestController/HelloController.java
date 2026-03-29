@@ -6,6 +6,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/my-book-store")
 public class HelloController {
@@ -24,6 +26,12 @@ public class HelloController {
 
     }
 
+    @GetMapping("/books")
+    public ResponseEntity<List<Book>> getAllBooks(){
+        List<Book> books = bookStoreDao.getAllBooks();
+        return ResponseEntity.ok(books);
+    }
+
     @GetMapping("/books/{bookId}")
     public ResponseEntity<Book> getBookById(@PathVariable Integer bookId) {
         Book tempbook = bookStoreDao.getBookById(bookId);
@@ -34,6 +42,8 @@ public class HelloController {
 
         return ResponseEntity.ok(tempbook);
     }
+
+
 
     @Transactional
     @PostMapping("/books")
