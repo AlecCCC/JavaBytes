@@ -3,6 +3,7 @@ package com.SpringSecurityChapter2.SpringSecurityChapter2.security.config;
 import com.SpringSecurityChapter2.SpringSecurityChapter2.security.service.CustomUserDetailsService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -34,6 +35,8 @@ public class SecurityConfig {
                 .csrf(csrf -> csrf.disable())
                 .httpBasic(Customizer.withDefaults())
                 .authorizeHttpRequests(auth -> auth
+                        .requestMatchers(HttpMethod.POST, "/my-book-store/register","/my-book-store/register/").permitAll()
+                        .requestMatchers(HttpMethod.DELETE, "/my-book-store/users/**").authenticated()
                         .requestMatchers("/my-book-store/books").permitAll()
                         .requestMatchers("/my-book-store/books/{id}").authenticated()
                         .anyRequest().authenticated()
