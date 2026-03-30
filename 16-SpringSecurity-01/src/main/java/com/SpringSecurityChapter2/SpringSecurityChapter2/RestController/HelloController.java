@@ -4,6 +4,7 @@ import com.SpringSecurityChapter2.SpringSecurityChapter2.dao.BookStoreDao;
 import com.SpringSecurityChapter2.SpringSecurityChapter2.entity.Book;
 import com.SpringSecurityChapter2.SpringSecurityChapter2.security.entity.RegisterRequest;
 import com.SpringSecurityChapter2.SpringSecurityChapter2.security.entity.User;
+import com.SpringSecurityChapter2.SpringSecurityChapter2.security.entity.UserResponse;
 import com.SpringSecurityChapter2.SpringSecurityChapter2.security.service.UserService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
@@ -43,9 +44,8 @@ public class HelloController {
     }
 
     @GetMapping("/users")
-    public ResponseEntity<List<User>> getUsers() {
-        List<User> users = userService.getUsers();
-        return ResponseEntity.ok(users);
+    public ResponseEntity<List<UserResponse>> getUsers() {
+        return ResponseEntity.ok(userService.getUsers());
     }
 
     @DeleteMapping("/users/{id}")

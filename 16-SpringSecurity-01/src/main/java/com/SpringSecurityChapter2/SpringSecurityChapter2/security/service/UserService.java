@@ -1,10 +1,12 @@
 package com.SpringSecurityChapter2.SpringSecurityChapter2.security.service;
 
 import com.SpringSecurityChapter2.SpringSecurityChapter2.security.entity.User;
+import com.SpringSecurityChapter2.SpringSecurityChapter2.security.entity.UserResponse;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -25,7 +27,7 @@ public class UserService {
             throw new RuntimeException("User Already Exists: " + username);
         }
 
-        User user = new User(username, passwordEncoder.encode(password), authority);
+        User user = new User(username, passwordEncoder.encode(password), "USER");
         userRepository.save(user);
         
     }
@@ -42,8 +44,22 @@ public class UserService {
 
     }
 
-    public List<User> getUsers() {
-        return userRepository.findAll();
+    public List<UserResponse> getUsers() {
+        List<User> users = userRepository.findAll();
+        List<UserResponse> result = new ArrayList<>();
+
+        for (User user: users) {
+            UserResponse response = new UserResponse(
+                    user.getId(),
+                    user.getUsername(),
+                    user.getAuthority()
+            );
+
+            result.add(response);
+        }
+
+        return result;
+
     }
     
 }
