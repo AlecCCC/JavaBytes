@@ -36,6 +36,7 @@ public class SecurityConfig {
                 .httpBasic(Customizer.withDefaults())
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(HttpMethod.POST, "/my-book-store/register","/my-book-store/register/").permitAll()
+                        .requestMatchers(HttpMethod.GET,"/my-book-store/users/").authenticated()
                         .requestMatchers(HttpMethod.DELETE, "/my-book-store/users/**").authenticated()
                         .requestMatchers("/my-book-store/books").permitAll()
                         .requestMatchers("/my-book-store/books/{id}").authenticated()

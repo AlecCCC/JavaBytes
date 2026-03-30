@@ -3,6 +3,7 @@ package com.SpringSecurityChapter2.SpringSecurityChapter2.RestController;
 import com.SpringSecurityChapter2.SpringSecurityChapter2.dao.BookStoreDao;
 import com.SpringSecurityChapter2.SpringSecurityChapter2.entity.Book;
 import com.SpringSecurityChapter2.SpringSecurityChapter2.security.entity.RegisterRequest;
+import com.SpringSecurityChapter2.SpringSecurityChapter2.security.entity.User;
 import com.SpringSecurityChapter2.SpringSecurityChapter2.security.service.UserService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
@@ -28,6 +29,7 @@ public class HelloController {
         return "Hello";
     }
 
+
     @PostMapping("/register")
     public ResponseEntity<String> register(@RequestBody RegisterRequest request) {
         System.out.println(">>> /register hit");
@@ -38,6 +40,12 @@ public class HelloController {
         );
 
         return ResponseEntity.ok("User Successfully Registered");
+    }
+
+    @GetMapping("/users")
+    public ResponseEntity<List<User>> getUsers() {
+        List<User> users = userService.getUsers();
+        return ResponseEntity.ok(users);
     }
 
     @DeleteMapping("/users/{id}")
