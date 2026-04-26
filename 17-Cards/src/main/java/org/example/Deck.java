@@ -2,6 +2,7 @@ package org.example;
 
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Random;
 
 public class Deck {
@@ -12,9 +13,10 @@ public class Deck {
 
    public Deck() {
        cards = new ArrayList<>();
+       int index = 0;
        for (Card.Suit suit : Card.Suit.values()) {
            for (Card.Rank rank : Card.Rank.values()) {
-               cards.add(new Card(suit, rank));
+               cards.add(new Card(suit, rank, index++));
            }
        }
     }
@@ -38,7 +40,9 @@ public class Deck {
     }
 
 
-
+    public void resetOrder() {
+       cards.sort(Comparator.comparingInt(Card::getOriginal_index));
+    }
 
     public ArrayList<Card> getCards() {
         return cards;

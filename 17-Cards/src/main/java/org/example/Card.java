@@ -7,10 +7,12 @@ public class Card {
 
     private Suit suit;
     private Rank rank;
+    private int original_index;
 
-    public Card(Suit suit, Rank rank) {
+    public Card(Suit suit, Rank rank, int original_index) {
         this.suit = suit;
         this.rank = rank;
+        this.original_index = original_index;
     }
 
     public Suit getSuit() {
@@ -20,6 +22,11 @@ public class Card {
     public Rank getRank() {
         return rank;
     }
+
+    public int getOriginal_index() {
+        return original_index;
+    }
+
 
     @Override
     public String toString() {
