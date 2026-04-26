@@ -13,7 +13,6 @@ import java.util.List;
 public class UserService {
     
     private final UserRepository userRepository;
-    
     private final PasswordEncoder passwordEncoder;
 
     public UserService(UserRepository userRepository, PasswordEncoder passwordEncoder) {
@@ -33,14 +32,12 @@ public class UserService {
     }
 
     @Transactional
-    public String deleteUser(Long id) {
+    public void deleteUser(Long id) {
         if (!userRepository.existsById(id)) {
             throw new RuntimeException("User not found: " + id);
         }
 
         userRepository.deleteById(id);
-
-        return "Deleted user with id of " + id;
 
     }
 
