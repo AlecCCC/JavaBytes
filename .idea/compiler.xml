@@ -7,11 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SpringSecurityChapter2" />
-        <module name="17-Cards" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="16-SpringSecurity-01" target="22" />
+      <module name="17-Cards" target="25" />
       <module name="Cards" target="24" />
       <module name="PostExample" target="17" />
       <module name="webclient" target="17" />
