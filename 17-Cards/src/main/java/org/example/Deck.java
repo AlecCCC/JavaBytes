@@ -21,6 +21,7 @@ public class Deck {
        }
     }
 
+
     public void printDeck() {
         for (Card card : cards) {
             System.out.println(card);
