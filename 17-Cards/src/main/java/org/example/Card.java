@@ -15,6 +15,7 @@ public class Card {
         this.original_index = original_index;
     }
 
+
     public Suit getSuit() {
         return suit;
     }
