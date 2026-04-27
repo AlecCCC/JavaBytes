@@ -1,17 +1,43 @@
 package org.example;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Deck {
 
-    private List<Card> cards;
+    private ArrayList<Card> cards = new ArrayList<>();
 
-    public Deck(List<Card> cards) {
-        this.cards = cards;
+    Random random = new Random();
+
+
+    public Deck() {
+        for (Card.Suit suit : Card.Suit.values()) {
+            for (Card.Rank rank : Card.Rank.values()) {
+                cards.add(new Card(suit, rank));
+            }
+        }
     }
 
-    public List<Card> getCards() {
+    public void printDeck() {
+        for (Card tempCard : cards) {
+            System.out.println(tempCard.getRank() + " of " + tempCard.getSuit());
+        }
+    }
+
+    public void shuffleDeck() {
+        for (int i = cards.size() - 1; i > 0; i-- ) {
+
+            int j = random.nextInt(i + 1);
+            Card temp = cards.get(i);
+
+            cards.set(i, cards.get(j));
+            cards.set(j, temp);
+        }
+    }
+
+
+    public ArrayList<Card> getCards() {
         return cards;
     }
-
 }
