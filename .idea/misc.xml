@@ -15,7 +15,6 @@
     </option>
     <option name="ignoredFiles">
       <set>
-        <option value="$PROJECT_DIR$/17-Cards/pom.xml" />
         <option value="$PROJECT_DIR$/Cards/pom.xml" />
       </set>
     </option>
