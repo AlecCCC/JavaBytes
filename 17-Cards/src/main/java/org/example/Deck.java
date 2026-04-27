@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Random;
 
@@ -34,6 +35,11 @@ public class Deck {
             cards.set(i, cards.get(j));
             cards.set(j, temp);
         }
+    }
+
+    public void reOrder() {
+        cards.sort(Comparator.comparing((Card card) -> card.getSuit().ordinal())
+                .thenComparing(card -> card.getRank().ordinal()));
     }
 
 

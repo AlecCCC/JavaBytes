@@ -8,10 +8,16 @@ public class Main {
         Deck deck = new Deck();
 
 
-
+        System.out.println("SHUFFLE");
         deck.shuffleDeck();
 
         deck.printDeck();
+
+        System.out.println("REORDER");
+        deck.reOrder();
+        deck.printDeck();
+
+
 
 
     }
