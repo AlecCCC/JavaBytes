@@ -1,19 +1,45 @@
 package org.example;
 
 
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
         Deck deck = new Deck();
+        Dealer dealer = new Dealer();
         Player player = new Player();
-        deck.shuffleDeck();
 
-        player.drawCard(deck);
-        player.drawCard(deck);
+        boolean gamePlaying = true;
+        Scanner scanner = new Scanner(System.in);
 
-        player.printHand();
-        player.getValue();
+        while (gamePlaying){
+
+            System.out.println("Welcome to black.\nReady to play?");
+            String choice = scanner.nextLine();
+
+            if (choice.equalsIgnoreCase("yes") || choice.equalsIgnoreCase("y")) {
+
+                dealer.drawCard(deck);
+                player.drawCard(deck);
+                dealer.drawCard(deck);
+                player.drawCard(deck);
+
+                dealer.printHand();
+
+
+
+
+
+            }
+
+            else {
+                System.exit(0);
+            }
+
+
+        }
+
 
 
 

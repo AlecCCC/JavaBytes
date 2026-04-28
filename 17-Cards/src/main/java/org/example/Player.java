@@ -15,8 +15,8 @@ public class Player {
         playerHand.addCard(deck.deal());
     }
 
-    public void getValue(){
-        System.out.println(playerHand.getHandValue());
+    public int getValue(){
+        return playerHand.getHandValue();
     }
 
     public void printHand() {
