@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Deck deck = new Deck();
+
         Dealer dealer = new Dealer();
         Player player = new Player();
 
@@ -15,17 +15,32 @@ public class Main {
 
         while (gamePlaying){
 
-            System.out.println("Welcome to black.\nReady to play?");
+            System.out.println("Welcome to blackjack.\nReady to play?");
             String choice = scanner.nextLine();
 
             if (choice.equalsIgnoreCase("yes") || choice.equalsIgnoreCase("y")) {
 
-                dealer.drawCard(deck);
-                player.drawCard(deck);
-                dealer.drawCard(deck);
-                player.drawCard(deck);
+                Deck gameDeck = new Deck();
+                dealer.getPlayerHand().clearHand();
+                player.getPlayerHand().clearHand();
 
-                dealer.printHand();
+                for (int i = 0; i < 2; i++) {
+                    dealer.drawCard(gameDeck);
+                    player.drawCard(gameDeck);
+                }
+
+                System.out.println("DEALER HAND");
+
+                dealer.showCardUp();
+                dealer.getCardUpValue();
+                System.out.println("------");
+                System.out.println("PLAYER HAND");
+                player.printHand();
+                System.out.printf("Player's Value is: %d ", player.getValue());
+
+                System.out.println("What would like the player do?\n1. Hit\n2. Stay");
+
+
 
 
 

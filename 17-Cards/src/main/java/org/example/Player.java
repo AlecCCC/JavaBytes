@@ -25,4 +25,7 @@ public class Player {
         }
     }
 
+    public Hand getPlayerHand() {
+        return playerHand;
+    }
 }
