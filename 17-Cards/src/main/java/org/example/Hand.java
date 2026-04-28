@@ -7,8 +7,7 @@ public class Hand {
 
     private List<Card> cards = new ArrayList<>();
 
-    public Hand(List<Card> cards) {
-        this.cards = cards;
+    public Hand() {
     }
 
     public int getHandValue(){
@@ -32,6 +31,16 @@ public class Hand {
         return total;
 
 
+    }
+
+    public List<Card> getCards() {
+        return cards;
+    }
+
+
+
+    public void addCard(Card card) {
+        cards.add(card);
     }
 
 }

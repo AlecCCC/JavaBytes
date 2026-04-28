@@ -6,16 +6,16 @@ public class Main {
     public static void main(String[] args) {
 
         Deck deck = new Deck();
-
-
-        System.out.println("SHUFFLE");
+        Player player = new Player();
         deck.shuffleDeck();
 
-        deck.printDeck();
+        player.drawCard(deck);
+        player.drawCard(deck);
 
-        System.out.println("REORDER");
-        deck.reOrder();
-        deck.printDeck();
+        player.printHand();
+        player.getValue();
+
+
 
 
 

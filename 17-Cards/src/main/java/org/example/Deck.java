@@ -42,6 +42,10 @@ public class Deck {
                 .thenComparing(card -> card.getRank().ordinal()));
     }
 
+    public Card deal(){
+        return cards.removeFirst();
+    }
+
 
     public ArrayList<Card> getCards() {
         return cards;
