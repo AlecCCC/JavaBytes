@@ -6,6 +6,7 @@ import java.util.List;
 public class Player {
 
     private Hand playerHand;
+    private boolean playerNotStanding = true;
 
     public Player() {
       this.playerHand = new Hand();
@@ -27,5 +28,13 @@ public class Player {
 
     public Hand getPlayerHand() {
         return playerHand;
+    }
+
+    public boolean isPlayerNotStood() {
+        return playerNotStanding;
+    }
+
+    public void setPlayerStood(boolean playerStood) {
+        this.playerNotStanding = playerStood;
     }
 }
