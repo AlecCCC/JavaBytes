@@ -33,6 +33,11 @@ public class Main {
                     player.drawCard(gameDeck);
                 }
 
+                if (dealer.getValue() == 21) {
+                    System.out.println("Dealer has 21. Dealer Wins");
+                    continue;
+                }
+
                 System.out.println("DEALER HAND");
 
                 dealer.showCardUp();
@@ -92,7 +97,7 @@ public class Main {
                             + " beats the players hand of " + player.getValue());
                 }
                 else if (player.getValue() > dealer.getValue()) {
-                    System.out.println("Player's " + player.getValue() + " beats Dealer's " + dealer.getValue() + "\n Player Wins!");
+                    System.out.println("Player's " + player.getValue() + " beats Dealer's " + dealer.getValue() + "\nPlayer Wins!");
                 }
                 else  if (player.getValue()  == dealer.getValue()) {
                     System.out.println("Tie");
