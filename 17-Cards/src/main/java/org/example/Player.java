@@ -1,12 +1,9 @@
 package org.example;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Player {
 
     private Hand playerHand;
-    private boolean playerNotStanding = true;
+    private boolean standing = false;
 
     public Player() {
       this.playerHand = new Hand();
@@ -30,11 +27,11 @@ public class Player {
         return playerHand;
     }
 
-    public boolean isPlayerNotStood() {
-        return playerNotStanding;
+    public boolean isStanding() {
+        return standing;
     }
 
-    public void setPlayerStood(boolean playerStood) {
-        this.playerNotStanding = !playerStood;
+    public void setStanding(boolean standing) {
+        this.standing = standing;
     }
 }

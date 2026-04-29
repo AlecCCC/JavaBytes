@@ -26,7 +26,7 @@ public class Main {
                 gameDeck.shuffleDeck();
                 dealer.getPlayerHand().clearHand();
                 player.getPlayerHand().clearHand();
-                player.setPlayerStood(false);
+                player.setStanding(false);
 
                 for (int i = 0; i < 2; i++) {
                     dealer.drawCard(gameDeck);
@@ -42,7 +42,7 @@ public class Main {
                 player.printHand();
                 System.out.printf("Player's Value is: %d\n", player.getValue());
 
-                while(player.isPlayerNotStood() && player.getValue() < 21){
+                while(!player.isStanding() && player.getValue() < 21){
 
                     System.out.println("What would like the player do?\n1. Hit\n2. Stay");
                     choice = scanner.nextLine();
@@ -56,7 +56,7 @@ public class Main {
                             System.out.printf("Player's Value is: %d\n", player.getValue());
                             break;
                         case "2":
-                            player.setPlayerStood(true);
+                            player.setStanding(true);
                     }
 
 
@@ -86,19 +86,15 @@ public class Main {
 
                 if (dealer.getValue() > 21) {
                     System.out.println("Dealer Busts, the player wins");
-                }
-
-                if (dealer.getValue() > player.getValue() && dealer.getValue() < 22) {
+                } else if (dealer.getValue() > player.getValue() && dealer.getValue() < 22) {
                     dealer.printHand();
                     System.out.println("Dealers value of: " + dealer.getValue()
                             + " beats the players hand of " + player.getValue());
                 }
-
-                if (player.getValue() > dealer.getValue()) {
+                else if (player.getValue() > dealer.getValue()) {
                     System.out.println("Player's " + player.getValue() + " beats Dealer's " + dealer.getValue() + "\n Player Wins!");
                 }
-
-                if (player.getValue()  == dealer.getValue()) {
+                else  if (player.getValue()  == dealer.getValue()) {
                     System.out.println("Tie");
                 }
 
