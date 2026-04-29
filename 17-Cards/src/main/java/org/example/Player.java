@@ -35,6 +35,6 @@ public class Player {
     }
 
     public void setPlayerStood(boolean playerStood) {
-        this.playerNotStanding = playerStood;
+        this.playerNotStanding = !playerStood;
     }
 }

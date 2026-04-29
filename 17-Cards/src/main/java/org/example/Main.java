@@ -1,9 +1,9 @@
 package org.example;
 
 
-import java.sql.SQLOutput;
+
 import java.util.Scanner;
-import java.util.Timer;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -23,8 +23,10 @@ public class Main {
             if (choice.equalsIgnoreCase("yes") || choice.equalsIgnoreCase("y")) {
 
                 Deck gameDeck = new Deck();
+                gameDeck.shuffleDeck();
                 dealer.getPlayerHand().clearHand();
                 player.getPlayerHand().clearHand();
+                player.setPlayerStood(false);
 
                 for (int i = 0; i < 2; i++) {
                     dealer.drawCard(gameDeck);
@@ -54,7 +56,7 @@ public class Main {
                             System.out.printf("Player's Value is: %d\n", player.getValue());
                             break;
                         case "2":
-                            player.setPlayerStood(false);
+                            player.setPlayerStood(true);
                     }
 
 
@@ -62,7 +64,7 @@ public class Main {
 
                 if (player.getValue() > 21) {
                     System.out.println("The player Busts!");
-                    break;
+                    continue;
                 }
 
 
@@ -80,24 +82,25 @@ public class Main {
                     dealer.printHand();
                     System.out.println("Dealer hand value: " + dealer.getValue());
                     System.out.println("----------------------");
-
-                    if (dealer.getValue() > 21) {
-                        System.out.println("Dealer Busts, the player wins");
-                    }
-
-                    if (dealer.getValue() > player.getValue() && dealer.getValue() < 22) {
-                        dealer.printHand();
-                        System.out.println("Dealers value of: " + dealer.getValue()
-                        + " beats the players hand of " + player.getValue());
-                    }
-
-
                 }
 
+                if (dealer.getValue() > 21) {
+                    System.out.println("Dealer Busts, the player wins");
+                }
 
+                if (dealer.getValue() > player.getValue() && dealer.getValue() < 22) {
+                    dealer.printHand();
+                    System.out.println("Dealers value of: " + dealer.getValue()
+                            + " beats the players hand of " + player.getValue());
+                }
 
+                if (player.getValue() > dealer.getValue()) {
+                    System.out.println("Player's " + player.getValue() + " beats Dealer's " + dealer.getValue() + "\n Player Wins!");
+                }
 
-
+                if (player.getValue()  == dealer.getValue()) {
+                    System.out.println("Tie");
+                }
 
 
             }
@@ -108,12 +111,5 @@ public class Main {
 
 
         }
-
-
-
-
-
-
-
     }
 }
