@@ -17,7 +17,7 @@ public class Main {
 
         while (gamePlaying){
 
-            System.out.println("Welcome to blackjack.\nReady to play? (yes/y or n/no");
+            System.out.println("Welcome to blackjack.\nReady to play? (yes/y or n/no)");
             String choice = scanner.nextLine();
 
             if (choice.equalsIgnoreCase("yes") || choice.equalsIgnoreCase("y")) {
