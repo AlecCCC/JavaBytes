@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="SpringSecurityChapter2" />
         <module name="17-Cards" />
+        <module name="18-Maps" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

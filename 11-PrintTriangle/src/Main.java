@@ -8,9 +8,9 @@ public class Main {
 
         int rows = scanner.nextInt();
 
-        rightTriangle(5);
+        rightTriangle(rows);
         System.out.println();
-        leftTriangle(5);
+        leftTriangle(rows);
         System.out.println();
         upsideDownTriangle(rows);
 
