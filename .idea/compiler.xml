@@ -7,8 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SpringSecurityChapter2" />
-        <module name="17-Cards" />
         <module name="18-Maps" />
+        <module name="17-Cards" />
+        <module name="19-AddTwoNumbers" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
